@@ -1,14 +1,15 @@
-
 #include<stdio.h>
-#include<math.h>
 int main()
 {
-    int a,num;
-    float ps;
-    scanf("%d",&num);
-    ps=sqrt(num);
-    a=ps;
-    if(a==ps)
+    int n,r,sum=0;
+    scanf("%d",&n);
+    while(n>0)
+    {
+      r=n%10;
+      n=n/10;
+      sum=sum+r;
+    }
+    if(sum%2!=0)
     {
         printf("True");
     }
@@ -16,5 +17,4 @@ int main()
     {
         printf("False");
     }
-    return 0;
 }
